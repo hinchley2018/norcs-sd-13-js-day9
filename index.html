@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- See how event is stopped -->
+    <form action="./process.js" method="post">
+        <input type="text" name="first name"/>
+        <input type="text" name="last name"/>
+        <input type="submit" value="Submit" id="submit-button"/>
+    </form>
+
+    <!-- Stop bubbling -->
+    <div>
+        <button id="another-button">Another button</button>
+    </div>
+
+    <a id="google-link" href="https://google.com">Go to google</a>
+    <script src="./index.js"></script>
+</body>
+</html>
